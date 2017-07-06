@@ -96,7 +96,7 @@ function parseInput(rplyToken, inputStr) {
 		let trigger = mainMsg[0].toString().toLowerCase(); //指定啟動詞在第一個詞&把大階強制轉成細階
                        
         //鴨霸獸指令開始於此
-        if (trigger.match(/垃圾話/) != null) return randomReply() ;        
+        if (trigger.match(/!垃圾話/) != null) return randomReply() ;        
         if (trigger.match(/運氣|運勢/) != null) return randomLuck(mainMsg) ; //占卜運氣        
         
 		//FLAG指令開始於此
