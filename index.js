@@ -426,21 +426,27 @@ function build6char(){
     let Debuff = 0;
     let AppDebuff = 0;
     let EDUinc = 0;
+
+
     let oldArr = [15,20,40,50,60,70,80]
     let DebuffArr = [5,0,5,10,20,40,80]
     let AppDebuffArr = [0,0,5,10,15,20,25]
     let EDUincArr = [0,1,2,3,4,4,4]
+
     if (old < 15) return ReStr + '等等，核心規則不允許小於15歲的人物哦。';    
     if (old >= 90) return ReStr + '等等，核心規則不允許90歲以上的人物哦。'; 
+
     for ( i=0 ; old >= oldArr[i] ; i ++){
       Debuff = DebuffArr[i];
       AppDebuff = AppDebuffArr[i];
       EDUinc = EDUincArr[i];
     }
+
     ReStr = ReStr + '==\n';
     if (old < 20) ReStr = ReStr + '年齡調整：從STR、SIZ擇一減去' + Debuff + '點\n（請自行手動選擇計算）。\n將EDU減去5點。LUK可擲兩次取高。' ;
     else
       if (old >= 40)  ReStr = ReStr + '年齡調整：從STR、CON或DEX中「總共」減去' + Debuff + '點\n（請自行手動選擇計算）。\n將APP減去' + AppDebuff +'點。可做' + EDUinc + '次EDU的成長擲骰。' ;
+
     else ReStr = ReStr + '年齡調整：可做' + EDUinc + '次EDU的成長擲骰。' ;
     ReStr = ReStr + '\n=='; 
  if (old>=40) ReStr = ReStr + '\n（以下箭號三項，自選共減' + Debuff + '點。）' ;
@@ -1343,3 +1349,4 @@ function tarotCardReply(count) {
 \n  死亡FLAG：啓動語 立Flag/死亡flag\
 \n  coc7角色背景：啓動語 coc7角色背景\
 ';		
+		}
