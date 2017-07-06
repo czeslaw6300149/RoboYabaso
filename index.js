@@ -987,7 +987,7 @@ function BStyleFlagSCRIPTS() {
 	
         function randomReply() {
           let rplyArr = ['\
-「今不慮前事之失，複循覆車之軌。 (不去想之前為失敗的原因，必定會重蹈覆轍。)」\n --後漢書','\
+「今不慮前事之失，複循覆車之軌。 (不去想之前為失敗的原因，必定會重蹈覆轍。)」','\
 「屋漏偏逢連夜雨，船遲又遇打頭風。」','\
 「山無陵，江水為竭， 冬雷震震，夏雨(ㄩˋ)雪， 天地合，乃敢 與君絕！」','\
 「積陰德者，必有陽報。」','\
@@ -1007,14 +1007,14 @@ function BStyleFlagSCRIPTS() {
 「知道的人多，行道的人少；說理的人多，悟理的人少。」','\
 「真正不尋常的一日，就是沒有任何不尋常事發生的一日。」','\
 「無能者的錯誤標度源自於對自我的錯誤認知，  而極有才能者的錯誤標度源自於對他人的錯誤認知。」','\
-「enlightenment leads to benightedness,science entails nescience.(啟蒙導致愚昧，知識帶來無知)」','\
+「enlightenment leads to benightedness,science entails nescience.」 \n(啟蒙導致愚昧，知識帶來無知)','\
 「遊戲也許是一種本能，為了日後在困窘時生存下來而訓練我們身體的行為。」','\
 「遊戲，即自願地去達成完全不必要的難題。」','\
 「遊戲，請安心玩，因為你我都有權去追求更高層次的滿足感。」','\
 「『接觸』乃是一種感受部分電子所造成的排斥力的行為。」','\
 「寧為聰明的愚夫，不作愚蠢的才子。」','\
 「志者千慮，總有一失。愚者千慮，總有一得。 」','\
-「All the 『splendor』 in the world is not worth a good friend.(世間一切的璀璨寶石，不如一個好基有。)」','\
+「All the 『splendor』 in the world is not worth a good friend.」 \n(世間一切的璀璨寶石，不如一個好基有。)','\
 「腳步不能到達的地方，眼光可以到達；眼光不能到達的地方，精神可以到達。」','\
 「忍者道，隱一己之心而成人所求也。」','\
 「殷其雷，天陰霾，雨零耶，盼君留。殷其雷，縱不零，卿若留，吾將從。(隱約雷鳴，陰霾天空，但盼風雨來，能留你在此。隱約雷鳴，陰霾天空，即使天無雨，我亦留此地。)」','\
@@ -1029,13 +1029,13 @@ function BStyleFlagSCRIPTS() {
 「杜鵑不啼，就隨他去吧。(不抱過高的期望 接受相應的現實 並試圖去享受它，很好的體現出當下年輕人的心理特性)」','\
 「打贏了也要綁緊頭盔的帶子，打輸了就要鬆開腰間皮帶。」','\
 「人間萬事有如塞翁失馬，禍福有如糾纏在一起的繩子，有樂即有苦。」','\
-「Nothing is ture,everything is permitted. 無物為真，諸行皆可。(萬物永遠都在變化，所以不應因某些常規而束縛自己。)」','\
+「Nothing is ture,everything is permitted. 無物為真，諸行皆可。」 \n(萬物永遠都在變化，所以不應因某些常規而束縛自己。)','\
 「人生就像憤怒鳥，失敗總有豬在笑。」','\
 「風是往哪裡吹的?是明天!」','\
 「只有做好被射殺覺悟的人，才有資格開槍。」','\
 「戰爭跟下棋一樣，待在弱勢的一方總是比較有趣。」','\
 「沒有可以完全治癒的傷，時間總能沖淡一切，卻沖不走東西。」','\
-「With all this modern convenience at our fingertips.  Nothing can replace a little face time.(盡管指尖下的現代科技各種便利，面對面的交流扔然是無可替代的。)」','\
+「With all this modern convenience at our fingertips.  Nothing can replace a little face time.」 \n(盡管指尖下的現代科技各種便利，面對面的交流扔然是無可替代的。)','\
 「失去幻覺比找到真理，更能增長智慧。」','\
 「問為一時之恥，不問為一世之恥。教為一時之優越感，不教為一世之優越感。」','\
 「千策具備，能有其一為之所用，就已足以。」','\
@@ -1048,12 +1048,12 @@ function BStyleFlagSCRIPTS() {
 「黎明前的夜晚，總是最黑暗的。」','\
 「三者三用。 (每個人都有不同的做事方式和思考方式。)」','\
 「用兩隻手無法拿穩三個以上的杯子。」','\
-「Gathering a large group of people to work together will create a great source of strength. (人多力量大，眾人拾柴火燄高。)」','\
+「Gathering a large group of people to work together will create a great source of strength.」 \n(人多力量大，眾人拾柴火燄高。)」','\
 「去擁有只屬於你的武器；用只適用於你的規則活下去；然後讓現實認可你的規則；這樣未來便會是你們的囊中之物。」','\
 「找到自己想做的事情後，就算沒有任意門，你也早就可以到任何你想去的地方了。」','\
 「有時候不認真打一場，是沒有辦法讓對方了解自己是有多認真看待這件事的。」','\
 「所謂的學習，就是獲取使人生不走上歧途的知識。」','\
-「With great power also comes great responsibility. (力量越大，責任越大。)」','\
+「With great power also comes great responsibility.」 \n(力量越大，責任越大。)','\
 「跟氦氣一樣輕浮；但又如鋇餐一樣密不透光。」','\
 「不把問題當問題，那問題就不是問題。」','\
 「無法計算而剩下的答案，就是人類的感情。」','\
@@ -1080,20 +1080,20 @@ function BStyleFlagSCRIPTS() {
 「宇宙生而不公平是自然的，但人類創造的不公平是刻意的。」','\
 「科學不會找到答案，只會給你答案，人們用科學來忘記一切是如此深不可測。」','\
 「you wouldn’t like it, when you make me angry.」','\
-「That you must stay who you are, Not a perfect soldier, but a good man.(永遠不要忘了初衷，寧為善人，不為完人。)」','\
-「If you are good at something, never do it for free.(假如你擅長某件事情，千萬不要免費幫人做」','\
+「That you must stay who you are, Not a perfect soldier, but a good man.」 \n(永遠不要忘了初衷，寧為善人，不為完人。)','\
+「If you are good at something, never do it for free.」 \n(假如你擅長某件事情，千萬不要免費幫人做','\
 「戴手錶不是為了記得時間，是為了能偶爾能忘記時間。」','\
-「Not a bad seed, just a bad influence. (本性不壞，但近墨者黑。)」','\
-「A house built on shifting sand will fall. (流沙之上；大廈必倒。)」','\
-「forgiveness takes more strength than anger. (原諒比憤怒更需要勇氣。)」','\
-「Nomatter what type of animal you are, change starts with you.(不管你的天性如何，改變都有你自己開始。)」','\
-「evil preys on the weak because it fears the strong. (邪惡侵襲弱者，因為它懼怕強者。)」','\
-「I have experience and patients, A man can do anything if he has those. (擁有經驗與耐心之人必將成功)」','\
-「Not everything dose, not everything has to. (凡事不一定合理，也沒必要合理。)」','\
-「A knight in shining armor, is a man who has truly never had his metal tested. (一個身披閃亮盔甲的騎士，代表著這個人從未經歷過真正的磨鍊。)」','\
-「The hammer shatters glass but hardens steel. (錘能碎玻璃；亦能鍛造鋼。)」','\
-「If you wish to see the truth, then hold no opinions. (想看見真理，就不要心存偏見。)」','\
-「The frog in the well never understands the sea. (井底之蛙 無法以蠡測海)」','\
+「Not a bad seed, just a bad influence.」 \n(本性不壞，但近墨者黑。)','\
+「A house built on shifting sand will fall.」 \n(流沙之上；大廈必倒。)','\
+「forgiveness takes more strength than anger.」 \n(原諒比憤怒更需要勇氣。)','\
+「Nomatter what type of animal you are, change starts with you.」 \n(不管你的天性如何，改變都有你自己開始。)','\
+「evil preys on the weak because it fears the strong.」 \n(邪惡侵襲弱者，因為它懼怕強者。)','\
+「I have experience and patients, A man can do anything if he has those.」 \n(擁有經驗與耐心之人必將成功)','\
+「Not everything dose, not everything has to.」 \n(凡事不一定合理，也沒必要合理。)','\
+「A knight in shining armor, is a man who has truly never had his metal tested.」 \n(一個身披閃亮盔甲的騎士，代表著這個人從未經歷過真正的磨鍊。)','\
+「The hammer shatters glass but hardens steel.」 \n(錘能碎玻璃；亦能鍛造鋼。)','\
+「If you wish to see the truth, then hold no opinions.」 \n(想看見真理，就不要心存偏見。)','\
+「The frog in the well never understands the sea.」 \n(井底之蛙 無法以蠡測海)','\
 「不要逃避、失落、哭泣，只將肩上灰塵拍落，繼續往前走。」','\
 「當我們打開電腦，就等於關上我們的門。我們只分享自己最好的一面，卻不帶真實的情感。」','\
 「我總是已經重新開始，走在改變的路上。」','\
