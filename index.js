@@ -97,12 +97,7 @@ function parseInput(rplyToken, inputStr) {
                        
         //額外指令開始於此
         if (trigger.match(/!垃圾話/) != null) return randomReply() ;        
-        if (trigger.match(/!運氣|!運勢|!今日運勢|!今日運氣/) != null) return randomLuck(mainMsg) ; //占卜運氣        
-        
-		//FLAG指令開始於此
-        if (trigger.match(/立flag|死亡flag/) != null) return BStyleFlagSCRIPTS() ;        
-       
-        
+
 }
 
 
