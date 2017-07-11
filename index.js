@@ -1024,7 +1024,8 @@ function BStyleFlagSCRIPTS() {
 「我今天所說的每一句話都無法教會我任何事情，如果我想學點東西的話，我一定得聆聽。」','\
 「乳不巨何以聚人心；腿不直何以值千金。」','\
 「知道一點半點就認為自己懂了的人更讓人討厭，就跟給千葉縣民送其他地方的落花生一樣。」','\
-「If you’re nothing without this suit,you shouldn’t have it.」\n(假如沒了它就會讓你一無事處，那你更不該擁有它。)'];
+「If you’re nothing without this suit,you shouldn’t have it.」\n(假如沒了它就會讓你一無事處，那你更不該擁有它。)','\
+「不能解決問題時，只好解決發現問題的人。」'];
           return rplyArr[Math.floor((Math.random() * (rplyArr.length)) + 0)];
         }
 		
