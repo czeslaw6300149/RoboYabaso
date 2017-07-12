@@ -989,7 +989,7 @@ function BStyleFlagSCRIPTS() {
 「Not a bad seed, just a bad influence.」 \n(本性不壞，但近墨者黑。)','\
 「A house built on shifting sand will fall.」 \n(流沙之上；大廈必倒。)','\
 「forgiveness takes more strength than anger.」 \n(原諒比憤怒更需要勇氣。)','\
-「Nomatter what type of animal you are, change starts with you.」 \n(不管你的天性如何，改變都有你自己開始。)','\
+「Nomatter what type of animal you are, change starts with you.」 \n(不管你的天性如何，改變都由你自己開始。)','\
 「evil preys on the weak because it fears the strong.」 \n(邪惡侵襲弱者，因為它懼怕強者。)','\
 「I have experience and patients, A man can do anything if he has those.」 \n(擁有經驗與耐心之人必將成功)','\
 「Not everything dose, not everything has to.」 \n(凡事不一定合理，也沒必要合理。)','\
