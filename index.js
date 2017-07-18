@@ -1076,7 +1076,7 @@ function BStyleFlagSCRIPTS() {
 「即便眼前道路細若羊腸，對心存希望之人而言，也一定能化為一條康莊大道吧！」','\
 「所謂的覺悟，不是抱定犧牲的決心，而是在黑暗的荒野中，劈出前進的道路！」','\
 「失去的，永遠不會比你手上現在握住的多。」'];
-          return rplyHead[Math.floor((Math.random() * (rplyHead.length)) + 0)] + '\n' + rplyArr[Math.floor((Math.random() * (rplyArr.length)) + 0)];
+          return rplyHead[Math.floor((Math.random() * (rplyHead.length)) + 0)] + '\n\n' + rplyArr[Math.floor((Math.random() * (rplyArr.length)) + 0)];
         }
 		
        function randomLuck(TEXT) {
