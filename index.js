@@ -96,7 +96,8 @@ function parseInput(rplyToken, inputStr) {
 		let trigger = mainMsg[0].toString().toLowerCase(); //指定啟動詞在第一個詞&把大階強制轉成細階
                        
         //額外指令開始於此
-        if (trigger.match(/!垃圾話/) != null) return randomReply() ;        
+        if (trigger.match(/!垃圾話/) != null) return randomReply() ;
+	if (trigger.match(/!冷知識/) != null) return randomKnowldge() ;
 
 }
 
@@ -1056,8 +1057,10 @@ function BStyleFlagSCRIPTS() {
            let rplyArr = ['超吉','超級上吉','大吉','吉','中吉','小吉','吉','小吉','吉','吉','中吉','吉','中吉','吉','中吉','小吉','末吉','吉','中吉','小吉','末吉','中吉','小吉','小吉','吉','小吉','末吉','中吉','小吉','凶','小凶','沒凶','大凶','很凶'];
            return TEXT[0] + ' ： ' + rplyArr[Math.floor((Math.random() * (rplyArr.length)) + 0)];
         }
-		
-		
+       function randomKnowldge() {
+          let rplyArr = ['\冷知識!'];
+		return rplyArr[Math.floor((Math.random() * (rplyArr.length)) + 0)];
+        }
 ////////////////////////////////////////
 //////////////// Funny
 ////////////////////////////////////////
