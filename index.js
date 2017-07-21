@@ -98,7 +98,7 @@ function parseInput(rplyToken, inputStr) {
         //額外指令開始於此
         if (trigger.match(/!垃圾話/) != null) return randomReply() ; //行892開始
 	if (trigger.match(/!冷知識/) != null) return randomKnowldge() ; //行1087開始
-	if (trigger.match(/猜拳/) != null) {return RockPaperScissors(inputStr, mainMsg[1]);} //行1798開始
+	if (trigger.match(/!決鬥|!猜拳/) != null) {return RockPaperScissors(inputStr, mainMsg[1]);} //行1798開始
 }
 
 
@@ -1804,10 +1804,35 @@ function BStyleFlagSCRIPTS() {
            HandToCal = aHand[Math.floor((Math.random() * (aHand.length)) + 0)];
 	}*/
 	var hand = FunnyDice(3); // 0:石頭 1:布 2:剪刀
-	let rplyArrWin = ['哼哼哈哈哈(魔王笑)你輸惹','哈哈你看看你！','贏了 (｀・ω・´)b'];
-	let rplyArrTie = ['看來我們不相上下阿','原來平手...沒什麼嘛！','平手 (  艸)'];
-	let rplyArrLose = ['你好像有點強！','才...才不是故意出讓你贏的呢！','輸惹 ゜。。゜(ノД‵)ノ・゜'];
-	let rplyArrWTF = ['欸不對喔你亂出！','別亂出阿會壞掉的','亂出打你喔 (｀・ω・´)凸'];
+	let rplyArrWin = ['\
+				你輸惹哼哼哈哈哈(魔王笑)','\
+				哈哈你看看你！','\
+				贏了 (｀・ω・´)b','\
+				王者是不會打會輸的戰爭的！','\
+				看來你還沒找到你缺乏的東西阿！','\
+				沒想到能贏過你呢，嘻嘻'];
+	let rplyArrTie = ['\
+				看來我們不相上下阿(喘氣+擦汗)','\
+				原來平手...沒什麼嘛！','\
+				平手 (  艸)','\
+				三天三夜...竟未能與你分出勝負阿...','\
+				出的不錯...','\
+				沒想到會平手呢，嘻嘻'];
+	let rplyArrLose = ['\
+				下棋和戰爭一樣，待在弱勢的一方總是比較有趣(微微冷笑)','\
+				你好像有點強！','\
+				輸惹 ゜。。゜(ノД‵)ノ・゜','\
+				這不是我的天下，那...會是誰的天下?','\
+				當年的小鬼，不知不覺已經跑道我前面了嗎?','\
+				沒想到會出給你呢，嘻嘻'];
+	let rplyArrWTF = ['\
+				不按牌理出牌嗎?真是有趣！(驚訝)','\
+				欸不對喔你亂出！','\
+				亂出打你喔 (｀・ω・´)凸','\
+				原來如此，還有亂出這招阿！','\
+				年輕人就是年輕人，連規則都不清楚呢...','\
+				沒想到你會亂出呢，嘻嘻','\
+				別亂出阿會壞掉的'];
 	switch (hand) {
 		case 0: //石頭
 			returnStr = '我出石頭！\n';
