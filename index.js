@@ -96,9 +96,9 @@ function parseInput(rplyToken, inputStr) {
 		let trigger = mainMsg[0].toString().toLowerCase(); //指定啟動詞在第一個詞&把大階強制轉成細階
                        
         //額外指令開始於此
-        if (trigger.match(/!垃圾話/) != null) return randomReply() ;
-	if (trigger.match(/!冷知識/) != null) return randomKnowldge() ;
-
+        if (trigger.match(/!垃圾話/) != null) return randomReply() ; //行892開始
+	if (trigger.match(/!冷知識/) != null) return randomKnowldge() ; //行1087開始
+	if (trigger.match(/猜拳/) != null) {return RockPaperScissors(inputStr, mainMsg[1]);} //行1798開始
 }
 
 
@@ -1085,7 +1085,7 @@ function BStyleFlagSCRIPTS() {
            return TEXT[0] + ' ： ' + rplyArr[Math.floor((Math.random() * (rplyArr.length)) + 0)];
         }
        function randomKnowldge() {
-	  let rplyHead = ['冷知識時間!','要講冷知識了嗎?','馬上來!'];
+	  let rplyHead = ['冷知識時間!','要講冷知識了嗎?','馬上來!','歡迎踏入87思考領域的第一步!'];
 	  let rplyArr = ['\
 【碳足跡】:\n\
 	碳足跡或譯碳足印。指每個人、家庭或每家公司日常釋放的溫室氣體數量（以二氧化碳即CO2的影響為單位），\
