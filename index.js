@@ -98,7 +98,7 @@ function parseInput(rplyToken, inputStr) {
         //額外指令開始於此
         if (trigger.match(/!垃圾話/) != null) return randomReply() ; //行892開始
 	if (trigger.match(/!冷知識/) != null) return randomKnowldge() ; //行1087開始
-	if (trigger.match(/!決鬥|!猜拳/) != null) {return RockPaperScissors(inputStr, mainMsg[1]);} //行1798開始
+	if (trigger.match(/猜拳/) != null) {return RockPaperScissors(inputStr, mainMsg[1]);} //行1798開始
 }
 
 
