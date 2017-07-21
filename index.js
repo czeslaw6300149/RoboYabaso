@@ -1804,9 +1804,10 @@ function BStyleFlagSCRIPTS() {
            HandToCal = aHand[Math.floor((Math.random() * (aHand.length)) + 0)];
 	}*/
 	var hand = FunnyDice(3); // 0:石頭 1:布 2:剪刀
-	let rplyArrWin = ['哼哼哈哈哈(魔王笑)你輸惹'];
-	let rplyArrTie = ['看來我們不相上下阿'];
-	let rplyArrLose = ['你好像有點強！'];
+	let rplyArrWin = ['哼哼哈哈哈(魔王笑)你輸惹','哈哈你看看你！','贏了 (｀・ω・´)b'];
+	let rplyArrTie = ['看來我們不相上下阿','原來平手...沒什麼嘛！','平手 (  艸)'];
+	let rplyArrLose = ['你好像有點強！','才...才不是故意出讓你贏的呢！','輸惹 ゜。。゜(ノД‵)ノ・゜'];
+	let rplyArrWTF = ['欸不對喔你亂出！','別亂出阿會壞掉的','亂出打你喔 (｀・ω・´)凸'];
 	switch (hand) {
 		case 0: //石頭
 			returnStr = '我出石頭！\n';
@@ -1814,27 +1815,27 @@ function BStyleFlagSCRIPTS() {
 			if (HandToCal.match(/剪刀|1/) != null) returnStr += rplyArrWin[Math.floor((Math.random() * (rplyArrWin.length)) + 0)];
 			else if (HandToCal.match(/石頭|2/) != null) returnStr += rplyArrTie[Math.floor((Math.random() * (rplyArrTie.length)) + 0)];
 			else if (HandToCal.match(/布|3/) != null) returnStr += rplyArrLose[Math.floor((Math.random() * (rplyArrLose.length)) + 0)];
-			else returnStr += '欸不對喔你亂出！';
+			else returnStr += rplyArrWTF[Math.floor((Math.random() * (rplyArrWTF.length)) + 0)];
 
 			break;
 
 		case 1: //布
 			returnStr = '我出布！\n';
 
-			if (HandToCal.match(/剪刀|1/) != null) returnStr += '才...才不是故意出布讓你贏的呢！';
-			else if (HandToCal.match(/布|2/) != null) returnStr += '原來平手...沒什麼嘛！';
-			else if (HandToCal.match(/石頭|3/) != null) returnStr += '哈哈你看看你！';
-			else returnStr += '別亂出阿會壞掉的';
+			if (HandToCal.match(/剪刀|1/) != null) returnStr += rplyArrLose[Math.floor((Math.random() * (rplyArrLose.length)) + 0)];
+			else if (HandToCal.match(/布|2/) != null) returnStr += rplyArrTie[Math.floor((Math.random() * (rplyArrTie.length)) + 0)];
+			else if (HandToCal.match(/石頭|3/) != null) returnStr += rplyArrWin[Math.floor((Math.random() * (rplyArrWin.length)) + 0)];
+			else returnStr += rplyArrWTF[Math.floor((Math.random() * (rplyArrWTF.length)) + 0)];
 
 			break;
 
 		case 2: //剪刀
 			returnStr = '我出剪刀！\n';
 
-			if (HandToCal.match(/剪刀|1/) != null) returnStr += '平手 (  艸)';
-			else if (HandToCal.match(/布|2/) != null) returnStr += '贏了 (｀・ω・´)b';
-			else if (HandToCal.match(/石頭|3/) != null) returnStr += '輸惹 ゜。。゜(ノД‵)ノ・゜';
-			else returnStr += '亂出打你喔 (｀・ω・´)凸';
+			if (HandToCal.match(/剪刀|1/) != null) returnStr += rplyArrTie[Math.floor((Math.random() * (rplyArrTie.length)) + 0)];
+			else if (HandToCal.match(/布|2/) != null) returnStr += rplyArrWin[Math.floor((Math.random() * (rplyArrWin.length)) + 0)];
+			else if (HandToCal.match(/石頭|3/) != null) returnStr += rplyArrLose[Math.floor((Math.random() * (rplyArrLose.length)) + 0)];
+			else returnStr += rplyArrWTF[Math.floor((Math.random() * (rplyArrWTF.length)) + 0)];
 
 			break;
 
