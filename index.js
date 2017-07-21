@@ -1453,6 +1453,9 @@ function BStyleFlagSCRIPTS() {
 	而在衝突(Conflict)的狀況下根據有無可以干擾別人的因素可分為:\n\
 		一.無:競賽(Competition) 或 二.有:遊戲(Game)\n\
 	#PS:這只是一種分法，並非絕對。','\
+【自轉】:\n\
+	如果全世界的人一起趴在地上，理論上來說會讓旋轉週期變快並令一日變短。其原因是因為類似溜冰選手會令自己所有質量接近重心導致轉速提升一樣。\
+	比較明顯的例子是地震，地震如果導致地球質量接近地心的話，會有一樣的效果。','\
 '];
 	       
 	   return rplyHead[Math.floor((Math.random() * (rplyHead.length)) + 0)] + '\n' + rplyArr[Math.floor((Math.random() * (rplyArr.length)) + 0)];
