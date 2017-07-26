@@ -1850,7 +1850,11 @@ function BStyleFlagSCRIPTS() {
 	<倚賴甚麼方式做決定>：你是「理性」（Thinking）（T）還是「情感」（Feeling）（F）？\n\
 	<生活方式和處事態度>：你是「判斷」（Judging）（J）還是「理解」（Perceiving）（P）？\n\
 	不過該種分類法雖然在商界流行，但心理學界認為MBTI理論有缺陷，測量結果不可靠，而且同一個人不同時候測量的結果也不同。\
-	並指出這是巴納姆效應的例子。'];
+	並指出這是巴納姆效應的例子。','\
+【朝河蘭】:\n\
+	初期曾使用過清水優香 〈Shimizu Yuka〉的藝名，又名武藤蘭〈Mutou Ran〉，日本成人影片女演員。出生於神奈川縣，2001年進入AV界。\n\
+	在2002年共有212部AV作品面市，並獲得金氏世界記錄認證為「一年之內售出最多色情影片的女演員與製片公司」世界記錄頭銜擁有者。\
+	2003年更是創記錄的出演了304部AV作品。其中兩年內創下516部AV作品也是日本AV史上的最高記錄。該女優於2003年宣布引退。'];
 	       
 	   return rplyHead[Math.floor((Math.random() * (rplyHead.length)) + 0)] + '\n' + rplyArr[Math.floor((Math.random() * (rplyArr.length)) + 0)];
         }
