@@ -1085,7 +1085,7 @@ function BStyleFlagSCRIPTS() {
            return TEXT[0] + ' ： ' + rplyArr[Math.floor((Math.random() * (rplyArr.length)) + 0)];
         }
        function randomKnowldge() {
-	  let rplyHead = ['冷知識時間!','要講冷知識了嗎?','馬上來!','歡迎踏入87思考領域的第一步!'];
+	  let rplyHead = ['冷知識時間!','要講冷知識了嗎?','馬上來!','歡迎踏入87思考領域的第一步!','捏，知道嗎?','知識就是力量!'];
 	  let rplyArr = ['\
 【碳足跡】:\n\
 	碳足跡或譯碳足印。指每個人、家庭或每家公司日常釋放的溫室氣體數量（以二氧化碳即CO2的影響為單位），\
