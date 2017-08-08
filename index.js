@@ -101,7 +101,7 @@ function parseInput(rplyToken, inputStr) {
 	if (trigger.match(/!決鬥|!猜拳/) != null) {return RockPaperScissors(inputStr, mainMsg[1]);} //猜拳
 	if (trigger.match(/!運氣|!運勢|!今日運勢|!今日運氣/) != null) return randomLuck(mainMsg) ; //每日運勢        
         if (trigger.match(/立flag|死亡flag|!FLAG|!flag/) != null) return BStyleFlagSCRIPTS() ; //死亡FLAG  
-	if (trigger.match(/tarot|塔羅牌|塔羅/) != null) { //塔羅牌
+	if (trigger.match(/!tarot|!塔羅牌|!塔羅|!算命/) != null) { //塔羅牌
 			if (trigger.match(/每日|daily/)!= null) {
 				return NomalDrawTarot(mainMsg[1], mainMsg[2]);
 			}
