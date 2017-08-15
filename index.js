@@ -96,11 +96,6 @@ function parseInput(rplyToken, inputStr) {
 		let trigger = mainMsg[0].toString().toLowerCase(); //指定啟動詞在第一個詞&把大階強制轉成細階
                        
         //額外指令開始於此
-        if (trigger.match(/!垃圾話/) != null) return randomReply() ; //垃圾話
-	if (trigger.match(/!決鬥|!猜拳/) != null) {return RockPaperScissors(inputStr, mainMsg[1]);} //猜拳
-	if (trigger.match(/!運氣|!運勢|!今日運勢|!今日運氣/) != null) return randomLuck(mainMsg) ; //每日運勢        
-        if (trigger.match(/立flag|死亡flag|!FLAG|!flag/) != null) return BStyleFlagSCRIPTS() ; //死亡FLAG  
-	if (trigger.match(/!臨時人名/) != null) return TempName() ; //臨時人名
 	if (trigger.match(/!tarot|!塔羅牌|!塔羅|!算命/) != null) { //塔羅牌
 			if (trigger.match(/每日|daily/)!= null) {
 				return NomalDrawTarot(mainMsg[1], mainMsg[2]);
@@ -113,7 +108,13 @@ function parseInput(rplyToken, inputStr) {
 			}
 			return MultiDrawTarot(mainMsg[1], mainMsg[2], 3); //預設抽 79 張
 		}
+	if (trigger.match(/!垃圾話/) != null) return randomReply() ; //垃圾話
+	if (trigger.match(/!決鬥|!猜拳/) != null) {return RockPaperScissors(inputStr, mainMsg[1]);} //猜拳
+	if (trigger.match(/!運氣|!運勢|!今日運勢|!今日運氣/) != null) return randomLuck(mainMsg) ; //每日運勢        
+        if (trigger.match(/立flag|死亡flag|!FLAG|!flag/) != null) return BStyleFlagSCRIPTS() ; //死亡FLAG  
+	if (trigger.match(/!臨時人名/) != null) return TempName() ; //臨時人名
 	
+	//製作中/尚未開放
 	//if (trigger.match(/!冷知識/) != null) return randomKnowldge() ; //冷知識(尚未開放)
 	//if (trigger.match(/!吃啥/) != null) return WhatToEat() ; //吃啥
 	//if (trigger.match(/!玩啥/) != null) return WhatToPlat() ; //玩啥
