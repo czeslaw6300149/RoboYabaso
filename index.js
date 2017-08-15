@@ -97,10 +97,10 @@ function parseInput(rplyToken, inputStr) {
                        
         //額外指令開始於此
         if (trigger.match(/!垃圾話/) != null) return randomReply() ; //垃圾話
-	//if (trigger.match(/!冷知識/) != null) return randomKnowldge() ; //冷知識(尚未開放)
 	if (trigger.match(/!決鬥|!猜拳/) != null) {return RockPaperScissors(inputStr, mainMsg[1]);} //猜拳
 	if (trigger.match(/!運氣|!運勢|!今日運勢|!今日運氣/) != null) return randomLuck(mainMsg) ; //每日運勢        
         if (trigger.match(/立flag|死亡flag|!FLAG|!flag/) != null) return BStyleFlagSCRIPTS() ; //死亡FLAG  
+	if (trigger.match(/!臨時人名/) != null) return TempName() ; //臨時人名
 	if (trigger.match(/!tarot|!塔羅牌|!塔羅|!算命/) != null) { //塔羅牌
 			if (trigger.match(/每日|daily/)!= null) {
 				return NomalDrawTarot(mainMsg[1], mainMsg[2]);
@@ -113,10 +113,12 @@ function parseInput(rplyToken, inputStr) {
 			}
 			return MultiDrawTarot(mainMsg[1], mainMsg[2], 3); //預設抽 79 張
 		}
+	
+	//if (trigger.match(/!冷知識/) != null) return randomKnowldge() ; //冷知識(尚未開放)
 	//if (trigger.match(/!吃啥/) != null) return WhatToEat() ; //吃啥
-	//if (trigger.match(/!吃啥/) != null) return WhatToPlat() ; //玩啥
-	//if (trigger.match(/!吃啥/) != null) return WhatToTalk() ; //說啥
-	//if (trigger.match(/!吃啥/) != null) return WhatToChuNiByo() ; //中二啥
+	//if (trigger.match(/!玩啥/) != null) return WhatToPlat() ; //玩啥
+	//if (trigger.match(/!說啥/) != null) return WhatToTalk() ; //說啥
+	//if (trigger.match(/!中二/) != null) return WhatToChuNiByo() ; //中二啥
 }
 
 
@@ -2224,6 +2226,11 @@ function tarotCardReply(count) {
     return '背景描述生成器（僅供娛樂用，不具實際參考價值）\n==\n調查員是一個' + PersonalDescriptionArr[Math.floor((Math.random() * (PersonalDescriptionArr.length)) + 0)] + '人。\n【信念】：說到這個人，他' + IdeologyBeliefsArr[Math.floor((Math.random() * (IdeologyBeliefsArr.length)) + 0)] + '。\n【重要之人】：對他來說，最重要的人是' + SignificantPeopleArr[Math.floor((Math.random() * (SignificantPeopleArr.length)) + 0)] + '，這個人對他來說之所以重要，是因為' + SignificantPeopleWhyArr[Math.floor((Math.random() * (SignificantPeopleWhyArr.length)) + 0)] + '。\n【意義非凡之地】：對他而言，最重要的地點是' + MeaningfulLocationsArr[Math.floor((Math.random() * (MeaningfulLocationsArr.length)) + 0)] + '。\n【寶貴之物】：他最寶貴的東西就是'+ TreasuredPossessionsArr[Math.floor((Math.random() * (TreasuredPossessionsArr.length)) + 0)] + '。\n【特徵】：總括來說，調查員是一個' + TraitsArr[Math.floor((Math.random() * (TraitsArr.length)) + 0)] + '。';
     
   }
+
+function TempName() {
+	let TempName = ['水無月 流歌'];
+	return TempName[Math.floor((Math.random() * (TempName.length)) + 0)]
+}
 
 //return rplyHead[Math.floor((Math.random() * (rplyHead.length)) + 0)] + '\n' + rplyArr[Math.floor((Math.random() * (rplyArr.length)) + 0)];
 
