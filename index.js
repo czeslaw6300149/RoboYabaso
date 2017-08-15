@@ -113,6 +113,10 @@ function parseInput(rplyToken, inputStr) {
 			}
 			return MultiDrawTarot(mainMsg[1], mainMsg[2], 3); //預設抽 79 張
 		}
+	//if (trigger.match(/!吃啥/) != null) return WhatToEat() ; //吃啥
+	//if (trigger.match(/!吃啥/) != null) return WhatToPlat() ; //玩啥
+	//if (trigger.match(/!吃啥/) != null) return WhatToTalk() ; //說啥
+	//if (trigger.match(/!吃啥/) != null) return WhatToChuNiByo() ; //中二啥
 }
 
 
@@ -2221,6 +2225,29 @@ function tarotCardReply(count) {
     
   }
 
+//return rplyHead[Math.floor((Math.random() * (rplyHead.length)) + 0)] + '\n' + rplyArr[Math.floor((Math.random() * (rplyArr.length)) + 0)];
+
+function WhatToEat(){ //吃啥
+	let FoodName = [];
+	let Sentence = [];
+	let Explain = [];
+}
+
+function WhatToPlat(){ //玩啥
+	let GameName = [];
+	let Sentence = [];
+	let Explain = [];
+}
+
+function WhatToTalk(){ //說啥
+	let ThemeName = [];
+	let Sentence = [];
+	let Explain = [];
+}
+
+function WhatToChuNiByo(){ //中二啥
+	let ChuNiSentence = [];
+}
 
 		function Help() {
 			return randomReply() + '\n' + '\
