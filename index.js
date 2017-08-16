@@ -96,7 +96,7 @@ function parseInput(rplyToken, inputStr) {
 		let trigger = mainMsg[0].toString().toLowerCase(); //指定啟動詞在第一個詞&把大階強制轉成細階
                        
         //額外指令開始於此
-	
+	/*
 	 if (trigger.match(/^coc7角色背景$/)!= null ) return PcBG();
 		
 		//nc指令開始於此 來自Rainsting/TarotLineBot 
@@ -162,7 +162,7 @@ function parseInput(rplyToken, inputStr) {
 	{        
 		return xUy(trigger,mainMsg[1],mainMsg[2],mainMsg[3]);
 	}
-	
+	*/
 
 	if (trigger.match(/!tarot|!塔羅牌|!塔羅|!算命/) != null) { //塔羅牌
 			if (trigger.match(/每日|daily/)!= null) {
