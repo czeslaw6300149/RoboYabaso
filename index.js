@@ -2336,6 +2336,8 @@ function WhatToEat(){ //吃啥
 	let Food = ['土,一種富含化學物質的食物(?)，前幾名分別是，氧矽鋁鐵鈣鈉鉀鎂'];
 	var FoodArr = Food.split(",");
 	let Sentence = ['恩～肚子餓餓要不要試試看'+ FoodArr[0] +'這個如何?\n' + FoodArr[1]];
+	
+	return Sentence[Math.floor((Math.random() * (Sentence.length)) + 0)]
 }
 
 function WhatToPlay(){ //玩啥
