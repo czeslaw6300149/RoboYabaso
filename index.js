@@ -2333,9 +2333,18 @@ function TempName() {
 //return rplyHead[Math.floor((Math.random() * (rplyHead.length)) + 0)] + '\n' + rplyArr[Math.floor((Math.random() * (rplyArr.length)) + 0)];
 
 function WhatToEat(){ //吃啥
-	let Food = '土,一種富含化學物質的食物(?)，前幾名分別是，氧矽鋁鐵鈣鈉鉀鎂';
-	var FoodArr = Food.split(",");
-	let Sentence = '恩～肚子餓餓要不要試試看'+ FoodArr[0] +'這個如何?\n' + FoodArr[1];
+	let Food = ['土|一種富含化學物質的食物(?)，前幾名分別是，氧矽鋁鐵鈣鈉鉀鎂'];
+	let FoodChoise = Food[Math.floor((Math.random() * (Food.length)) + 0)];
+	var FoodArr = FoodChoise.split("|");
+	
+	let Sentence = ['恩～肚子餓餓要不要試試看【|】呢?']
+	let SentenceChoise = Sentence[Math.floor((Math.random() * (Sentence.length)) + 0)];
+	var SentenceArr = FoodChoise.split("|");
+	
+	let finallSentence = SentenceArr[0] + FoodArr[0] + SentenceArr[1] + FoodArr[1];
+	return finallSentence;
+	
+	
 	
 	//return Sentence[Math.floor((Math.random() * (Sentence.length)) + 0)];
 	return Sentence;
