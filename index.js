@@ -2339,7 +2339,7 @@ function WhatToEat(){ //吃啥
 	
 	let Sentence = ['恩～肚子餓餓要不要試試看【|】呢?']
 	let SentenceChoise = Sentence[Math.floor((Math.random() * (Sentence.length)) + 0)];
-	var SentenceArr = FoodChoise.split("|");
+	var SentenceArr = SentenceChoise.split("|");
 	
 	let finallSentence = SentenceArr[0] + FoodArr[0] + SentenceArr[1] + FoodArr[1];
 	return finallSentence;
