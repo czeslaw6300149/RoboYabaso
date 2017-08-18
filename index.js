@@ -2341,7 +2341,7 @@ function WhatToEat(){ //吃啥
 	let SentenceChoise = Sentence[Math.floor((Math.random() * (Sentence.length)) + 0)];
 	var SentenceArr = SentenceChoise.split("|");
 	
-	let finallSentence = SentenceArr[0] + FoodArr[0] + SentenceArr[1] + FoodArr[1];
+	let finallSentence = SentenceArr[0] + FoodArr[0] + SentenceArr[1] + '\n【' + FoodArr[0] + '】\n' + FoodArr[1];
 	return finallSentence;
 	
 	
