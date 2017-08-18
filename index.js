@@ -183,7 +183,7 @@ function parseInput(rplyToken, inputStr) {
 	
 	//製作中/尚未開放
 	//if (trigger.match(/!冷知識/) != null) return randomKnowldge() ; //冷知識(完成)
-	//if (trigger.match(/!臨時人名/) != null) return TempName() ; //臨時人名 (施工中)
+	if (trigger.match(/!臨時人名/) != null) return TempName() ; //臨時人名 (施工中)
 	//if (trigger.match(/!吃啥/) != null) return WhatToEat() ; //吃啥 (準備好)
 	//if (trigger.match(/!玩啥/) != null) return WhatToPlay() ; //玩啥 (規劃中)
 	//if (trigger.match(/!說啥/) != null) return WhatToTalk() ; //說啥 (規劃中)
@@ -2325,9 +2325,13 @@ function tarotCardReply(count) {
     
   }
 
-function TempName() {
-	let TempName = ['水無月 流歌'];
-	return TempName[Math.floor((Math.random() * (TempName.length)) + 0)];
+function TempName() { //臨時人名
+	let TempName = ['\
+	女	|	水無月 流歌	|	及肩褐髮，長相溫柔，大和撫子型。	|	日本 / 朧月島 (地點不明)	|	雜誌編輯員。學過"攝影"、"跳躍"、"喬裝"	'];
+	let TempNameChoise = TempName[Math.floor((Math.random() * (TempName.length)) + 0)];
+	let TempNameArr = TempNameChoise.split("|");
+	let structure = '名字:' + TempNameArr[1] + '\n長相敘述:' + TempNameArr[2] + '\n國籍/出生地:' + TempNameArr[3] + '\n其它備註/可使用設定:' + TempNameArr[4] ;
+	return structure;
 }
 
 //return rplyHead[Math.floor((Math.random() * (rplyHead.length)) + 0)] + '\n' + rplyArr[Math.floor((Math.random() * (rplyArr.length)) + 0)];
