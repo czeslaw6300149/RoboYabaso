@@ -180,14 +180,14 @@ function parseInput(rplyToken, inputStr) {
 	if (trigger.match(/!決鬥|!猜拳/) != null) {return RockPaperScissors(inputStr, mainMsg[1]);} //猜拳
 	if (trigger.match(/!運氣|!運勢|!今日運勢|!今日運氣/) != null) return randomLuck(mainMsg) ; //每日運勢        
         if (trigger.match(/立flag|死亡flag|!FLAG|!flag/) != null) return BStyleFlagSCRIPTS() ; //死亡FLAG  
-	if (trigger.match(/!臨時人名/) != null) return TempName() ; //臨時人名
 	
 	//製作中/尚未開放
-	//if (trigger.match(/!冷知識/) != null) return randomKnowldge() ; //冷知識(尚未開放)
-	//if (trigger.match(/!吃啥/) != null) return WhatToEat() ; //吃啥
-	//if (trigger.match(/!玩啥/) != null) return WhatToPlay() ; //玩啥
-	//if (trigger.match(/!說啥/) != null) return WhatToTalk() ; //說啥
-	//if (trigger.match(/!中二/) != null) return WhatToChuNiByo() ; //中二啥
+	//if (trigger.match(/!冷知識/) != null) return randomKnowldge() ; //冷知識(完成)
+	//if (trigger.match(/!臨時人名/) != null) return TempName() ; //臨時人名 (施工中)
+	//if (trigger.match(/!吃啥/) != null) return WhatToEat() ; //吃啥 (準備好)
+	//if (trigger.match(/!玩啥/) != null) return WhatToPlay() ; //玩啥 (規劃中)
+	//if (trigger.match(/!說啥/) != null) return WhatToTalk() ; //說啥 (規劃中)
+	//if (trigger.match(/!中二/) != null) return WhatToChuNiByo() ; //中二啥 (規劃中)
 }
 
 
