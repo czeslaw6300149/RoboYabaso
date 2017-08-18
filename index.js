@@ -183,7 +183,7 @@ function parseInput(rplyToken, inputStr) {
 	if (trigger.match(/!臨時人名/) != null) return TempName() ; //臨時人名
 	
 	//製作中/尚未開放
-	//if (trigger.match(/!冷知識/) != null) return randomKnowldge() ; //冷知識(尚未開放)
+	if (trigger.match(/!冷知識/) != null) return randomKnowldge() ; //冷知識(尚未開放)
 	//if (trigger.match(/!吃啥/) != null) return WhatToEat() ; //吃啥
 	//if (trigger.match(/!玩啥/) != null) return WhatToPlat() ; //玩啥
 	//if (trigger.match(/!說啥/) != null) return WhatToTalk() ; //說啥
@@ -1953,7 +1953,36 @@ function BStyleFlagSCRIPTS() {
 	被遠東國際軍事法庭裁定為戰犯，故有些機構會以政治正確因素而改稱雙颱效應（binary interaction）。','\
 【科里奧利力】(Coriolis Force / 科氏力):\n\
 	是對旋轉體系中進行直線運動的質點由於慣性相對於旋轉體系產生的直線運動的偏移的一種描述。\
-	此現象由法國著名數學家兼物理學家古斯塔夫・科里奧利發現，因而得名；同時由於這種力在地球自轉下產生，因此又稱為「地轉偏向力」。'];
+	此現象由法國著名數學家兼物理學家古斯塔夫・科里奧利發現，因而得名；同時由於這種力在地球自轉下產生，因此又稱為「地轉偏向力」。','\
+【史高維爾指標】(Scoville Scale):\n\
+	1912年由美國化學家威爾伯·史高維爾（Wilbur Scoville）所制訂的度量辣椒素（Capsaicin）含量的一項指標。\
+	「史高維爾辣度單位」（Scoville Heat Unit），縮寫為SHU。\n\
+	因為這個實驗方法受人的主觀影響甚大，所以後人開發出稱為「高效液相色譜」的方法來量測。不過由於史高維爾指標的流用已久，\
+	所以現今仍常將高效液相色譜的量測值轉換為SHU來表示辣椒素含量。\n\
+	==《舉例》\n\
+	甜椒 = 0-5 SHU\n\
+	普通辣椒 = 10,000 SHU\n\
+	朝天椒 = 30,000 - 48,000 SHU\n\
+	沙維那亞伯內洛紅辣椒（魔鬼椒）= 350,000 - 580,000 SHU\n\
+	民用催淚瓦斯 =  2,000,000 SHU\n\
+	龍息辣椒 = 2,480,000 SHU\n\
+	軍用催淚瓦斯 = 5,300,000 SHU\n\
+	純辣椒素 =  16,000,000 SHU','\
+【沙維那亞伯內洛紅辣椒】:\n\
+	俗稱哈瓦那紅辣椒，也叫紅色殺手辣椒、墨西哥魔鬼椒，是傳統黃燈籠辣椒（habanero chili）的一個栽培變種，\
+	選擇性培育的目的是生產味道更辣、重量更沉、和個頭兒更大的辣椒品種。此哈瓦那紅辣椒受美國植物品種保護法保護。\n\
+	1994年，金氏世界紀錄認定：沙維那亞伯內洛紅辣椒是地球上最辣的辣椒，直至2007年2月被印度斷魂椒取代。\n\
+	科學家們在繼續研究此種辣椒對人的健康和營養整體上的益處，此益處包括：\n\
+	1.助消化-Improvement of digestion.\n\
+	2.通腸胃-Alleviates congestion.\n\
+	3.降低膽固醇-Cholesterol lowering abilities.\n\
+	4.降血壓-Blood pressure lowering abilities.\n\
+	5.促進脂肪氧化分解-Improved fat oxidation.\n\
+	6.降低三酸甘油脂-Triglyceride lowering.\n\
+	7.防止血塊凝聚-Blood clot prevention.\n\
+	8.加強循環系統-Improvement in circulation.\n\
+	9.防心臟病和癌症-Heart disease and cancer prevention.\n\
+	哈瓦那紅椒雖然辛辣，在食用上會帶給人極度不舒適感，但是它的益處數不勝數遠勝其缺點。'];
 	       
 	   return rplyHead[Math.floor((Math.random() * (rplyHead.length)) + 0)] + '\n' + rplyArr[Math.floor((Math.random() * (rplyArr.length)) + 0)];
         }
