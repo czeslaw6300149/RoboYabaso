@@ -183,7 +183,7 @@ function parseInput(rplyToken, inputStr) {
 	if (trigger.match(/!臨時人名/) != null) return TempName() ; //臨時人名
 	
 	//製作中/尚未開放
-	if (trigger.match(/!冷知識/) != null) return randomKnowldge() ; //冷知識(尚未開放)
+	//if (trigger.match(/!冷知識/) != null) return randomKnowldge() ; //冷知識(尚未開放)
 	//if (trigger.match(/!吃啥/) != null) return WhatToEat() ; //吃啥
 	//if (trigger.match(/!玩啥/) != null) return WhatToPlat() ; //玩啥
 	//if (trigger.match(/!說啥/) != null) return WhatToTalk() ; //說啥
