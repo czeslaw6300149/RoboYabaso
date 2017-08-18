@@ -184,8 +184,8 @@ function parseInput(rplyToken, inputStr) {
 	
 	//製作中/尚未開放
 	//if (trigger.match(/!冷知識/) != null) return randomKnowldge() ; //冷知識(尚未開放)
-	//if (trigger.match(/!吃啥/) != null) return WhatToEat() ; //吃啥
-	//if (trigger.match(/!玩啥/) != null) return WhatToPlat() ; //玩啥
+	if (trigger.match(/!吃啥/) != null) return WhatToEat() ; //吃啥
+	//if (trigger.match(/!玩啥/) != null) return WhatToPlay() ; //玩啥
 	//if (trigger.match(/!說啥/) != null) return WhatToTalk() ; //說啥
 	//if (trigger.match(/!中二/) != null) return WhatToChuNiByo() ; //中二啥
 }
@@ -2333,12 +2333,12 @@ function TempName() {
 //return rplyHead[Math.floor((Math.random() * (rplyHead.length)) + 0)] + '\n' + rplyArr[Math.floor((Math.random() * (rplyArr.length)) + 0)];
 
 function WhatToEat(){ //吃啥
-	let FoodName = [];
-	let Sentence = [];
-	let Explain = [];
+	let Food = ['土,一種富含化學物質的食物(?)，前幾名分別是，氧矽鋁鐵鈣鈉鉀鎂'];
+	var FoodArr = Food.split(",");
+	let Sentence = ['恩～肚子餓餓要不要試試看'+ FoodArr[0] +'這個如何?\n' + FoodArr[1]];
 }
 
-function WhatToPlat(){ //玩啥
+function WhatToPlay(){ //玩啥
 	let GameName = [];
 	let Sentence = [];
 	let Explain = [];
