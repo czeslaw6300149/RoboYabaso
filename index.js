@@ -2347,7 +2347,6 @@ function WhatToEat(){ //吃啥
 	
 	
 	//return Sentence[Math.floor((Math.random() * (Sentence.length)) + 0)];
-	return Sentence;
 }
 
 function WhatToPlay(){ //玩啥
