@@ -184,7 +184,7 @@ function parseInput(rplyToken, inputStr) {
 	
 	//製作中/尚未開放
 	//if (trigger.match(/!冷知識/) != null) return randomKnowldge() ; //冷知識(尚未開放)
-	if (trigger.match(/!吃啥/) != null) return WhatToEat() ; //吃啥
+	//if (trigger.match(/!吃啥/) != null) return WhatToEat() ; //吃啥
 	//if (trigger.match(/!玩啥/) != null) return WhatToPlay() ; //玩啥
 	//if (trigger.match(/!說啥/) != null) return WhatToTalk() ; //說啥
 	//if (trigger.match(/!中二/) != null) return WhatToChuNiByo() ; //中二啥
@@ -2333,7 +2333,7 @@ function TempName() {
 //return rplyHead[Math.floor((Math.random() * (rplyHead.length)) + 0)] + '\n' + rplyArr[Math.floor((Math.random() * (rplyArr.length)) + 0)];
 
 function WhatToEat(){ //吃啥
-	//食物名稱與介紹
+	//食物名稱、介紹、新增者
 	let Food = ['\
 	羊睪丸	|	一種蒙古的特色食物，聽說可壯陽(?)	|	肥龍	','\
 	熱可樂(檸樂煲薑)	|	一種香港特色菜單，將可樂加熱後加上薑片，自以為可以治癒感冒的菜色	|	肥龍	','\
@@ -2360,10 +2360,6 @@ function WhatToEat(){ //吃啥
 	//融合並輸出
 	let finallSentence = SentenceArr[0] + FoodArr[0] + SentenceArr[1] + '\n==\n【' + FoodArr[0] + '】:\n' + FoodArr[1] + '\n<新增者:' + FoodArr[2] + '>';
 	return finallSentence;
-	
-	
-	
-	//return Sentence[Math.floor((Math.random() * (Sentence.length)) + 0)];
 }
 
 function WhatToPlay(){ //玩啥
