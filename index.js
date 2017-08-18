@@ -2337,8 +2337,8 @@ function WhatToEat(){ //吃啥
 	var FoodArr = Food.split(",");
 	let Sentence = ['恩～肚子餓餓要不要試試看'+ FoodArr[0] +'這個如何?\n' + FoodArr[1]];
 	
-	//return Sentence[Math.floor((Math.random() * (Sentence.length)) + 0)];
-	return Sentence;
+	return Sentence[Math.floor((Math.random() * (Sentence.length)) + 0)];
+	//return Sentence;
 }
 
 function WhatToPlay(){ //玩啥
