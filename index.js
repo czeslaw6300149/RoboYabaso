@@ -184,7 +184,7 @@ function parseInput(rplyToken, inputStr) {
 	
 	//製作中/尚未開放
 	//if (trigger.match(/!冷知識/) != null) return randomKnowldge() ; //冷知識(尚未開放)
-	if (trigger.match(/!吃啥/) != null) return WhatToEat() ; //吃啥
+	//if (trigger.match(/!吃啥/) != null) return WhatToEat() ; //吃啥
 	//if (trigger.match(/!玩啥/) != null) return WhatToPlay() ; //玩啥
 	//if (trigger.match(/!說啥/) != null) return WhatToTalk() ; //說啥
 	//if (trigger.match(/!中二/) != null) return WhatToChuNiByo() ; //中二啥
@@ -2335,11 +2335,11 @@ function TempName() {
 function WhatToEat(){ //吃啥
 	//食物名稱與介紹
 	let Food = ['\
-土|一種富含化學物質的食物(?)，前幾名分別是，氧矽鋁鐵鈣鈉鉀鎂','\
-熱可樂(檸樂煲薑)|一種香港特色菜單，將可樂加熱後加上薑片，自以為可以治癒感冒的菜色','\
-羊睪丸|一種蒙古的特色食物，聽說可壯陽(?)','\
-皮蛋|一種西方人會覺得寧可把裝著皮蛋的盤子吃掉也不想碰的食物','\
-藍起司|一種東方人會覺得寧可把裝著起司的盤子吃掉也不想碰的食物'];
+羊睪丸	|	一種蒙古的特色食物，聽說可壯陽(?)	|	肥龍	','\
+熱可樂(檸樂煲薑)	|	一種香港特色菜單，將可樂加熱後加上薑片，自以為可以治癒感冒的菜色	|	肥龍	','\
+土	|	一種富含化學物質的食物(?)，前幾名分別是，氧矽鋁鐵鈣鈉鉀鎂	|	肥龍	','\
+皮蛋	|	一種西方人會覺得寧可把裝著皮蛋的盤子吃掉也不想碰的食物	|	肥龍	','\
+藍起司	|	一種東方人會覺得寧可把裝著起司的盤子吃掉也不想碰的食物	|	肥龍	'];
 	let FoodChoise = Food[Math.floor((Math.random() * (Food.length)) + 0)];
 	var FoodArr = FoodChoise.split("|");
 	
@@ -2358,7 +2358,7 @@ function WhatToEat(){ //吃啥
 	var SentenceArr = SentenceChoise.split("|");
 	
 	//融合並輸出
-	let finallSentence = SentenceArr[0] + FoodArr[0] + SentenceArr[1] + '\n==\n【' + FoodArr[0] + '】:\n' + FoodArr[1];
+	let finallSentence = SentenceArr[0] + FoodArr[0] + SentenceArr[1] + '\n==\n【' + FoodArr[0] + '】:\n' + FoodArr[1] + '\n新增者:<' + FoodArr[2] + '>';
 	return finallSentence;
 	
 	
