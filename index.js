@@ -2330,7 +2330,7 @@ function TempName() { //臨時人名
 	女	|	水無月 流歌	|	及肩褐髮，長相溫柔，大和撫子型。	|	日本 / 朧月島 (地點不明)	|	雜誌編輯員。學過"攝影"、"跳躍"、"喬裝"	'];
 	let TempNameChoise = TempName[Math.floor((Math.random() * (TempName.length)) + 0)];
 	let TempNameArr = TempNameChoise.split("|");
-	let structure = '名字:' + TempNameArr[1] + '\n長相敘述:' + TempNameArr[2] + '\n國籍/出生地:' + TempNameArr[3] + '\n其它備註/可使用設定:' + TempNameArr[4] ;
+	let structure = '名字:' + TempNameArr[1] + '\n【長相敘述】:' + TempNameArr[2] + '\n【國籍/出生地】:' + TempNameArr[3] + '\n【其它備註/可使用設定】:' + TempNameArr[4] ;
 	return structure;
 }
 
