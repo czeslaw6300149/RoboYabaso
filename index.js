@@ -1982,7 +1982,10 @@ function BStyleFlagSCRIPTS() {
 	7.防止血塊凝聚-Blood clot prevention.\n\
 	8.加強循環系統-Improvement in circulation.\n\
 	9.防心臟病和癌症-Heart disease and cancer prevention.\n\
-	哈瓦那紅椒雖然辛辣，在食用上會帶給人極度不舒適感，但是它的益處數不勝數遠勝其缺點。'];
+	哈瓦那紅椒雖然辛辣，在食用上會帶給人極度不舒適感，但是它的益處數不勝數遠勝其缺點。','\
+【曼德拉效應】:\n\
+一定數目的人們對某事件有共同的集體記憶，卻發現現實中那個記憶從來沒有發生過。\
+命名原因是許多人認為南非總統尼爾遜。曼德拉早在80年代就死在監獄，但事實並非如此。'];
 	       
 	   return rplyHead[Math.floor((Math.random() * (rplyHead.length)) + 0)] + '\n' + rplyArr[Math.floor((Math.random() * (rplyArr.length)) + 0)];
         }
