@@ -180,9 +180,9 @@ function parseInput(rplyToken, inputStr) {
 	if (trigger.match(/!決鬥|!猜拳/) != null) {return RockPaperScissors(inputStr, mainMsg[1]);} //猜拳
 	if (trigger.match(/!運氣|!運勢|!今日運勢|!今日運氣/) != null) return RandomLuck(mainMsg) ; //每日運勢        
         if (trigger.match(/立flag|死亡flag|!FLAG|!flag/) != null) return BStyleFlagSCRIPTS() ; //死亡FLAG  
+	if (trigger.match(/!認證碼/) != null) return RandomCode() ; //認證碼 
 	
 	//製作中/尚未開放
-	if (trigger.match(/!認證碼/) != null) return RandomCode() ; //認證碼 (施工中)
 	//if (trigger.match(/!冷知識/) != null) return RandomKnowldge() ; //冷知識(完成)
 	if (trigger.match(/!臨時人名/) != null) return TempName() ; //臨時人名 (施工中)
 	//if (trigger.match(/!吃啥/) != null) return WhatToEat() ; //吃啥 (準備好)
@@ -1175,13 +1175,7 @@ function BStyleFlagSCRIPTS() {
            return TEXT[0] + ' ： ' + rplyArr[Math.floor((Math.random() * (rplyArr.length)) + 0)];
         }
        function RandomCode(){
-	   let rplyRandom =['1','2','3','4','5','6','7','8','9','0','A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','R','S','T','U','V','W','X','Y','Z'];
-	   let rplyArr1 =rplyRandom;
-	   let rplyArr2 =rplyRandom;    
-	   let rplyArr3 =rplyRandom;    
-	   let rplyArr4 =rplyRandom;    
-	   let rplyArr5 =rplyRandom;    
-	   let rplyArr6 =rplyRandom;    
+	   let rplyRandom =['1','2','3','4','5','6','7','8','9','0','A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','R','S','T','U','V','W','X','Y','Z'];  
 	   return rplyRandom[Math.floor((Math.random() * (rplyRandom.length)) + 0)]+rplyRandom[Math.floor((Math.random() * (rplyRandom.length)) + 0)]+rplyRandom[Math.floor((Math.random() * (rplyRandom.length)) + 0)]+rplyRandom[Math.floor((Math.random() * (rplyRandom.length)) + 0)]+rplyRandom[Math.floor((Math.random() * (rplyRandom.length)) + 0)]+rplyRandom[Math.floor((Math.random() * (rplyRandom.length)) + 0)];    
        }
        function RandomKnowldge() {
