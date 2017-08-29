@@ -178,11 +178,12 @@ function parseInput(rplyToken, inputStr) {
 		}
 	if (trigger.match(/!垃圾話/) != null) return randomReply() ; //垃圾話
 	if (trigger.match(/!決鬥|!猜拳/) != null) {return RockPaperScissors(inputStr, mainMsg[1]);} //猜拳
-	if (trigger.match(/!運氣|!運勢|!今日運勢|!今日運氣/) != null) return randomLuck(mainMsg) ; //每日運勢        
+	if (trigger.match(/!運氣|!運勢|!今日運勢|!今日運氣/) != null) return RandomLuck(mainMsg) ; //每日運勢        
         if (trigger.match(/立flag|死亡flag|!FLAG|!flag/) != null) return BStyleFlagSCRIPTS() ; //死亡FLAG  
 	
 	//製作中/尚未開放
-	//if (trigger.match(/!冷知識/) != null) return randomKnowldge() ; //冷知識(完成)
+	if (trigger.match(/!認證碼/) != null) return RandomCode() ; //認證碼 (施工中)
+	//if (trigger.match(/!冷知識/) != null) return RandomKnowldge() ; //冷知識(完成)
 	if (trigger.match(/!臨時人名/) != null) return TempName() ; //臨時人名 (施工中)
 	//if (trigger.match(/!吃啥/) != null) return WhatToEat() ; //吃啥 (準備好)
 	//if (trigger.match(/!玩啥/) != null) return WhatToPlay() ; //玩啥 (規劃中)
@@ -1169,11 +1170,23 @@ function BStyleFlagSCRIPTS() {
           return rplyHead[Math.floor((Math.random() * (rplyHead.length)) + 0)] + '\n\n' + rplyArr[Math.floor((Math.random() * (rplyArr.length)) + 0)];
         }
 		
-       function randomLuck(TEXT) {
+       function RandomLuck(TEXT) {
            let rplyArr = ['超吉','超級上吉','大吉','吉','中吉','小吉','吉','小吉','吉','吉','中吉','吉','中吉','吉','中吉','小吉','末吉','吉','中吉','小吉','末吉','中吉','小吉','小吉','吉','小吉','末吉','中吉','小吉','凶','小凶','沒凶','大凶','很凶'];
            return TEXT[0] + ' ： ' + rplyArr[Math.floor((Math.random() * (rplyArr.length)) + 0)];
         }
-       function randomKnowldge() {
+       function RandomCode(){
+	   let rplyRandom =['1','2','3','4','5','6','7','8','9','0','A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','R','S','T','U','V','W','X','Y','Z'];
+	   let rplyArr1 =rplyRandom;
+	   let rplyArr2 =rplyRandom;    
+	   let rplyArr3 =rplyRandom;    
+	   let rplyArr4 =rplyRandom;    
+	   let rplyArr5 =rplyRandom;    
+	   let rplyArr6 =rplyRandom;    
+	   return rplyArr1[Math.floor((Math.random() * (rplyArr.length)) + 0)]+rplyArr2[Math.floor((Math.random() * (rplyArr.length)) + 0)]+\
+		   rplyArr3[Math.floor((Math.random() * (rplyArr.length)) + 0)]+rplyArr4[Math.floor((Math.random() * (rplyArr.length)) + 0)]+\
+		   rplyArr5[Math.floor((Math.random() * (rplyArr.length)) + 0)]+rplyArr6[Math.floor((Math.random() * (rplyArr.length)) + 0)];    
+       }
+       function RandomKnowldge() {
 	  let rplyHead = ['冷知識時間!','要講冷知識了嗎?','馬上來!','歡迎踏入87思考領域的第一步!','捏，知道嗎?','知識就是力量!'];
 	  let rplyArr = ['\
 【碳足跡】:\n\
