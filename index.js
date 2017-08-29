@@ -1182,7 +1182,7 @@ function BStyleFlagSCRIPTS() {
 	   let rplyArr4 =rplyRandom;    
 	   let rplyArr5 =rplyRandom;    
 	   let rplyArr6 =rplyRandom;    
-	   return rplyRandom[Math.floor((Math.random() * (rplyArr.length)) + 0)]+rplyRandom[Math.floor((Math.random() * (rplyArr.length)) + 0)]+rplyRandom[Math.floor((Math.random() * (rplyArr.length)) + 0)]+rplyRandom[Math.floor((Math.random() * (rplyArr.length)) + 0)]+rplyRandom[Math.floor((Math.random() * (rplyArr.length)) + 0)];    
+	   return rplyRandom[Math.floor((Math.random() * (rplyArr.length)) + 0)];    
        }
        function RandomKnowldge() {
 	  let rplyHead = ['冷知識時間!','要講冷知識了嗎?','馬上來!','歡迎踏入87思考領域的第一步!','捏，知道嗎?','知識就是力量!'];
